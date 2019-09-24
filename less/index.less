@@ -1,0 +1,93 @@
+// import styles here:
+@import "reset.less";
+@import "global.less";
+@import "variables.less";
+@import "mixins.less";
+
+body {
+    background-image: url('../images/oscar.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    align-items: center;
+}
+
+.header {
+    align-items: center;
+}
+
+div.missionStatementDiv  {
+    margin-top: 50px;
+}
+
+nav.headerNav {
+    display:flex;
+    justify-content: space-evenly;
+    background:black;
+
+}
+
+.navAnchor {
+    text-decoration: none;
+    font-size: 3rem;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+    &:hover {
+        color: yellow;
+    }
+}
+
+h1.missionStatementH1 {
+    font-size: 3.5rem;
+    
+}
+
+div.main-content {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    @media @tablet {
+        width: 800px;
+    }
+    @media @phone {
+        width: 500px;
+    }
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+    h3 {
+        margin-top:10%;
+        font-size:5rem;
+    }
+    h1 {
+        margin-top:5%;
+        font-size:8rem;
+        &:hover {
+            color: white;
+        }
+    }
+}
+.socialMedia {
+    margin-right: 3%;
+    a img {
+        width: 50px;
+    }
+}
+#logo {
+    margin-left: 25%;
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+}
+
