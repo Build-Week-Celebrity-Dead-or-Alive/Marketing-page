@@ -2,8 +2,10 @@
     border: 2px solid green;
 }
 
-.redRound{
-    background-color: red;
+.redRound(@border-radius: 50%){
+    background: rgb(255,0,0);
+background: radial-gradient(circle, rgba(255,0,0,1) 0%, rgba(40,33,33,1) 100%);
             width: 20%;
-            border-radius: 50%;
+            border-radius: @border-radius;
+            border: 1px solid gold;
 }

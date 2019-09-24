@@ -1,11 +1,6 @@
 .testBorder {
   border: 2px solid green;
 }
-.redRound {
-  background-color: red;
-  width: 20%;
-  border-radius: 50%;
-}
 body {
   background-image: url(/img/Curtains.png);
   background-size: 100%;
@@ -19,7 +14,6 @@ body h5,
 body li,
 body nav a {
   color: gold;
-  border: 2px solid green;
 }
 body .header {
   display: flex;
@@ -33,9 +27,13 @@ body .header {
   text-decoration: none;
 }
 body .header .icon {
-  background-color: red;
+  background: #ff0000;
+  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
   width: 20%;
   border-radius: 50%;
+  border: 1px solid gold;
+  font-family: 'permanent marker';
+  text-align: center;
 }
 body .header .icon a {
   text-decoration: none;
@@ -43,11 +41,15 @@ body .header .icon a {
 body .header nav {
   width: 200%;
   text-decoration: none;
+  height: 10%;
+  font-family: 'Satisfy';
 }
 body .header nav a {
-  background-color: red;
+  background: #ff0000;
+  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
   width: 20%;
   border-radius: 50%;
+  border: 1px solid gold;
   text-decoration: none;
   margin: 8%;
 }
@@ -60,24 +62,66 @@ body .mid .celebrity {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid green;
+  font-family: 'Notable';
   width: 25%;
-  margin-left: 13%;
+  margin-left: 18%;
+  text-align: center;
 }
-body .mid .celebrity p {
-  border: 2px solid green;
+body .mid .celebrity .star {
+  width: 75%;
+}
+body .mid .celebrity h2 {
+  background: #ff0000;
+  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
+  width: 20%;
+  border-radius: 10%;
+  border: 1px solid gold;
   width: 100%;
 }
+body .mid .celebrity p {
+  background: #ff0000;
+  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
+  width: 20%;
+  border-radius: 10%;
+  border: 1px solid gold;
+  width: 100%;
+  font-size: 0.75rem;
+}
 body .mid .buttons {
-  margin-top: 20%;
+  margin-top: 20.5%;
   margin-right: 10%;
-  border: 2px solid green;
+  margin-left: 10%;
+  padding-top: 3%;
+  background: #ff0000;
+  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
+  border-radius: 30%;
+  border: 1px solid gold;
   width: 20%;
   text-align: center;
   height: 10%;
-  background-color: red;
-  border-radius: 30%;
+  font-family: 'Notable';
+  font-size: 0.5rem;
+}
+body .mid .buttons .Alive {
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+}
+body .mid .buttons .Alive .Alive:hover {
+  background: #434343;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
 }
 body .mid .scoreBoard {
   margin-right: 18%;
+  background: #ff0000;
+  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
+  width: 20%;
+  border-radius: 10%;
+  border: 1px solid gold;
+  height: 10%;
+  text-align: center;
+  font-family: 'Notable';
 }
