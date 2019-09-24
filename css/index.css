@@ -1,35 +1,83 @@
-.header {
+.testBorder {
+  border: 2px solid green;
+}
+.redRound {
+  background-color: red;
+  width: 20%;
+  border-radius: 50%;
+}
+body {
+  background-image: url(/img/Curtains.png);
+  background-size: 100%;
+}
+body p,
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body li,
+body nav a {
+  color: gold;
+  border: 2px solid green;
+}
+body .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin-top: 2%;
+  margin-top: 1%;
   margin-left: 2%;
   margin-right: 2%;
-  border: 2px solid red;
-  width: 90%;
+  width: 75%;
   padding-left: 5%;
+  text-decoration: none;
 }
-.mid {
+body .header .icon {
+  background-color: red;
+  width: 20%;
+  border-radius: 50%;
+}
+body .header .icon a {
+  text-decoration: none;
+}
+body .header nav {
+  width: 200%;
+  text-decoration: none;
+}
+body .header nav a {
+  background-color: red;
+  width: 20%;
+  border-radius: 50%;
+  text-decoration: none;
+  margin: 8%;
+}
+body .mid {
   display: flex;
   margin-top: 5%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-.mid .celebrity {
+body .mid .celebrity {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px solid red;
+  border: 2px solid green;
   width: 25%;
+  margin-left: 13%;
 }
-.mid .celebrity p {
-  border: 2px solid red;
+body .mid .celebrity p {
+  border: 2px solid green;
   width: 100%;
 }
-.mid .buttons {
+body .mid .buttons {
   margin-top: 20%;
   margin-right: 10%;
-  border: 2px solid red;
+  border: 2px solid green;
   width: 20%;
   text-align: center;
   height: 10%;
+  background-color: red;
+  border-radius: 30%;
+}
+body .mid .scoreBoard {
+  margin-right: 18%;
 }

@@ -1,37 +1,82 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-    border: 2px solid red;
-    width: 90%;
-    padding-left:5%;
-}
+body {
+    background-image: url(/img/Curtains.png);
+    background-size: 100%;
 
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    li,
+    nav a {
+        color: gold;
+        .testBorder();
+    }
 
-.mid{
-    display: flex;
-    margin-top: 5%;
-    justify-content: space-between;
-    .celebrity{
-        flex-direction: column;
+    .header {
+        display: flex;
+        justify-content: space-around;
         align-items: center;
-        justify-content: center;
-        border: 2px solid red;
-        width: 25%;
-        p{
-            border: 2px solid red;
-            width: 100%;
+        margin-top: 1%;
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 75%;
+        padding-left: 5%;
+        text-decoration: none;
+        .icon{
+            .redRound();
+            a{
+                
+    text-decoration: none;
+            }
+        }
+
+        nav {
+            width: 200%;
+            text-decoration: none;
+            
+            a {
+                .redRound();
+                text-decoration: none;
+                margin: 8%;
+            }
         }
     }
-    .buttons{
-        margin-top: 20%;
-        margin-right: 10%;
-        border: 2px solid red;
-        width: 20%;
-        text-align: center;
-        height: 10%;
+
+
+    .mid {
+        display: flex;
+        margin-top: 5%;
+        justify-content: space-around;
+
+        .celebrity {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .testBorder();
+            width: 25%;
+            margin-left: 13%;
+
+            p {
+                .testBorder();
+                width: 100%;
+            }
+        }
+
+        .buttons {
+            margin-top: 20%;
+            margin-right: 10%;
+            .testBorder();
+            width: 20%;
+            text-align: center;
+            height: 10%;
+            background-color: red;
+            border-radius: 30%;
+        }
+
+        .scoreBoard{
+            margin-right: 18%;
+        }
     }
 }
