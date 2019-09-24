@@ -94,25 +94,38 @@ body .mid .buttons {
   padding-top: 3%;
   background: #ff0000;
   background: radial-gradient(circle, #ff0000 0%, #282121 100%);
-  border-radius: 30%;
+  border-radius: 20%;
   border: 1px solid gold;
   width: 20%;
   text-align: center;
-  height: 10%;
+  height: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: 'Notable';
   font-size: 0.5rem;
 }
-body .mid .buttons .Alive {
-  text-decoration: none;
-  display: inline-block;
+body .mid .buttons .buttons:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0px 5px 40px -10px gold;
+  -moz-box-shadow: 0px 5px 40px -10px gold;
+  box-shadow: 5px 40px -10px gold;
   transition: all 0.4s ease 0s;
 }
-body .mid .buttons .Alive .Alive:hover {
-  background: #434343;
-  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
-  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
-  transition: all 0.4s ease 0s;
+body .mid .buttons .Alive,
+body .mid .buttons .Dead {
+  display: block;
+  background-color: #ff0000;
+  margin: 0 2% 2%;
+  cursor: pointer;
+  width: 100px;
+  height: 5%;
+  font-size: 1rem;
+  border-radius: 10px;
+  color: gold;
+  transition: relative;
+  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
 }
 body .mid .scoreBoard {
   margin-right: 18%;
