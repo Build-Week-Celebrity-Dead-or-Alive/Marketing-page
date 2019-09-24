@@ -39,7 +39,7 @@ body .header .icon a {
   text-decoration: none;
 }
 body .header nav {
-  width: 200%;
+  width: 400%;
   text-decoration: none;
   height: 10%;
   font-family: 'Satisfy';
@@ -51,7 +51,8 @@ body .header nav a {
   border-radius: 50%;
   border: 1px solid gold;
   text-decoration: none;
-  margin: 8%;
+  margin: 3%;
+  padding: 2%;
 }
 body .mid {
   display: flex;
@@ -91,7 +92,7 @@ body .mid .buttons {
   margin-top: 20.5%;
   margin-right: 10%;
   margin-left: 10%;
-  padding-top: 3%;
+  padding-top: 1.2%;
   background: #ff0000;
   background: radial-gradient(circle, #ff0000 0%, #282121 100%);
   border-radius: 20%;
@@ -105,6 +106,7 @@ body .mid .buttons {
   align-items: center;
   font-family: 'Notable';
   font-size: 0.5rem;
+  letter-spacing: 2px;
 }
 body .mid .buttons .buttons:hover {
   cursor: pointer;
@@ -126,6 +128,8 @@ body .mid .buttons .Dead {
   color: gold;
   transition: relative;
   background: radial-gradient(circle, #ff0000 0%, #282121 100%);
+  font-family: 'permanent marker';
+  letter-spacing: 3px;
 }
 body .mid .scoreBoard {
   margin-right: 18%;
