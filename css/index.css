@@ -252,6 +252,7 @@ div.main-content {
 }
 .main-content h1 {
   font-size: 8rem;
+  justify-content: center;
 }
 .main-content h1:hover {
   color: yellow;
@@ -306,4 +307,77 @@ footer {
 }
 footer p {
   font-size: 3rem;
+}
+.aboutTitle {
+  font-size: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+.content .aboutContent {
+  display: flex;
+  background-color: white;
+  width: 800px;
+  height: 1500px;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .content .aboutContent {
+    width: 350px;
+    height: 2500px;
+  }
+}
+.content .aboutContent .developers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media (max-width: 800px) {
+  .content .aboutContent .developers {
+    justify-content: space-evenly;
+  }
+}
+.content .aboutContent .developers .developer {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 10px;
+}
+.content .aboutContent .developers .developer p {
+  margin-bottom: 2%;
+  color: white;
+}
+.content .aboutContent .developers .developer img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 2%;
+  border-radius: 10px;
+}
+.content .aboutContent .developers .squished img {
+  width: 180px;
+  height: 250px;
+}
+.content .aboutContent .developers .top {
+  margin-top: 5%;
+}
+@media (max-width: 800px) {
+  .content .aboutContent .developers .top {
+    margin-top: 0;
+  }
+  .content .aboutContent .developers .tabletSquished {
+    margin-top: 10%;
+  }
 }
