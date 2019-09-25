@@ -1,130 +1,183 @@
-body {
-    background-image: url(/img/Curtains.png);
-    background-size: 100%;
+html{
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 
-    p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    li,
-    nav a {
-        color: gold;
-
-
-    }
-
-    .header {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 1%;
-        margin-left: 2%;
-        margin-right: 2%;
-        width: 75%;
-        padding-left: 5%;
-        text-decoration: none;
-
-        .icon {
-            .redRound();
-            font-family: 'permanent marker';
-            text-align: center;
-
-            a {
-
-                text-decoration: none;
-            }
+    body {
+        background-image: url(/img/Curtains.png) ;
+        background-size: 100%;
+    
+        p,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        li,
+        nav a {
+            color: gold;
+    
+    
         }
-
-        nav {
-            width: 400%;
-            text-decoration: none;
-            height: 10%;
-            font-family: 'Satisfy';
-
-
-            a {
-                .redRound();
-                text-decoration: none;
-                margin: 3%;
-                padding: 2%;
-                
-            }
-        }
-    }
-
-
-    .mid {
-        display: flex;
-        margin-top: 5%;
-        justify-content: space-around;
-
-        .celebrity {
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Notable';
-            width: 25%;
-            margin-left: 18%;
-            text-align: center;
-
-            .star {
-                width: 75%;
-            }
-
-            h2 {
-                .redRound(10%);
-                width: 100%;
-            }
-
-            p {
-                .redRound(10%);
-                width: 100%;
-                font-size: .75rem;
-            }
-        }
-
-        .buttons {
-            margin-top: 20.5%;
-            margin-right: 10%;
-            margin-left: 10%;
-            padding-top: 1.2%;
-            .redRound(20%);
-            width: 20%;
-            text-align: center;
-            height: 5%;
+    
+        .header {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
-            font-family: 'Notable';
-            font-size: .5rem;
-            letter-spacing: 2px;
-
-            .buttons:hover {
-                cursor: pointer;
-                -webkit-box-shadow: 0px 5px 40px -10px gold;
-                -moz-box-shadow: 0px 5px 40px -10px gold;
-                box-shadow: 5px 40px -10px gold;
-                transition: all 0.4s ease 0s;
-
-            }
-
-            .Alive,
-            .Dead {
-                .buttonSettings();
+            margin-top: 1%;
+            margin-left: 2%;
+            margin-right: 2%;
+            width: 75%;
+            padding-left: 5%;
+            text-decoration: none;
+    
+            .icon {
+                .redRound();
                 font-family: 'permanent marker';
-                letter-spacing: 3px;
+                text-align: center;
+    
+                a {
+    
+                    text-decoration: none;
+                }
+            }
+    
+            nav {
+                width: 400%;
+                text-decoration: none;
+                height: 10%;
+                font-family: 'Satisfy';
+    
+    
+                a {
+                    .redRound();
+                    text-decoration: none;
+                    margin: 3%;
+                    padding: 2%;
+                    
+                }
             }
         }
-
-        .scoreBoard {
-            margin-right: 18%;
-            .redRound(10%);
-            height: 10%;
-            text-align: center;
-            font-family: 'Notable';
+    
+    
+        .mid {
+            display: flex;
+            margin-top: 5%;
+            justify-content: space-around;
+    
+            .celebrity {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Notable';
+                width: 25%;
+                margin-left: 18%;
+                text-align: center;
+    
+                .star {
+                    width: 75%;
+                }
+    
+                h2 {
+                    .redRound(10%);
+                    width: 100%;
+                }
+    
+                p {
+                    .redRound(10%);
+                    width: 100%;
+                    font-size: .75rem;
+                }
+            }
+    
+            .buttons {
+                margin-top: 20.5%;
+                margin-right: 10%;
+                margin-left: 10%;
+                padding-top: 1.2%;
+                .redRound(20%);
+                width: 20%;
+                text-align: center;
+                height: 5%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Notable';
+                font-size: .5rem;
+                letter-spacing: 2px;
+    
+                .buttons:hover {
+                    cursor: pointer;
+                    -webkit-box-shadow: 0px 5px 40px -10px gold;
+                    -moz-box-shadow: 0px 5px 40px -10px gold;
+                    box-shadow: 5px 40px -10px gold;
+                    transition: all 0.4s ease 0s;
+    
+                }
+    
+                .Alive,
+                .Dead {
+                    .buttonSettings();
+                    font-family: 'permanent marker';
+                    letter-spacing: 3px;
+                }
+            }
+    
+            .scoreBoard {
+                margin-right: 18%;
+                .redRound(10%);
+                height: 10%;
+                text-align: center;
+                font-family: 'Notable';
+            }
         }
     }
+    /////////////////////////////About///////////////////////////////
+    .creditsMeta{
+        margin-top: 2%;
+        display: flex;
+        justify-content: center;
+        .credits{
+            h1{
+                text-align: center;
+                font-family: 'Notable';
+                letter-spacing: 2rem;
+            }
+            .redRound(10%;);
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            .testBorder();
+            
+            width: 66%;
+            .Cast{
+                h1{
+                    text-align: center;
+                    letter-spacing: .5rem;
+                }
+                display:flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Notable';
+                .testBorder();
+                
+                .castMember{
+                    margin: .25%;
+                    .testBorder();
+                    font-size: .75rem;
+                    text-align: center;
+                    p{
+                        font-family: 'Volkhov', serif;
+                    }
+                }
+            }
+        }
+    }
+    
 }
+

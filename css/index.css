@@ -1,21 +1,27 @@
 .testBorder {
   border: 2px solid green;
 }
-body {
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+html body {
   background-image: url(/img/Curtains.png);
   background-size: 100%;
 }
-body p,
-body h1,
-body h2,
-body h3,
-body h4,
-body h5,
-body li,
-body nav a {
+html body p,
+html body h1,
+html body h2,
+html body h3,
+html body h4,
+html body h5,
+html body li,
+html body nav a {
   color: gold;
 }
-body .header {
+html body .header {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -26,7 +32,7 @@ body .header {
   padding-left: 5%;
   text-decoration: none;
 }
-body .header .icon {
+html body .header .icon {
   background: #ff0000;
   background: radial-gradient(circle, #ff0000 0%, #282121 100%);
   width: 20%;
@@ -35,16 +41,16 @@ body .header .icon {
   font-family: 'permanent marker';
   text-align: center;
 }
-body .header .icon a {
+html body .header .icon a {
   text-decoration: none;
 }
-body .header nav {
+html body .header nav {
   width: 400%;
   text-decoration: none;
   height: 10%;
   font-family: 'Satisfy';
 }
-body .header nav a {
+html body .header nav a {
   background: #ff0000;
   background: radial-gradient(circle, #ff0000 0%, #282121 100%);
   width: 20%;
@@ -54,12 +60,12 @@ body .header nav a {
   margin: 3%;
   padding: 2%;
 }
-body .mid {
+html body .mid {
   display: flex;
   margin-top: 5%;
   justify-content: space-around;
 }
-body .mid .celebrity {
+html body .mid .celebrity {
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -68,10 +74,10 @@ body .mid .celebrity {
   margin-left: 18%;
   text-align: center;
 }
-body .mid .celebrity .star {
+html body .mid .celebrity .star {
   width: 75%;
 }
-body .mid .celebrity h2 {
+html body .mid .celebrity h2 {
   background: #ff0000;
   background: radial-gradient(circle, #ff0000 0%, #282121 100%);
   width: 20%;
@@ -79,7 +85,7 @@ body .mid .celebrity h2 {
   border: 1px solid gold;
   width: 100%;
 }
-body .mid .celebrity p {
+html body .mid .celebrity p {
   background: #ff0000;
   background: radial-gradient(circle, #ff0000 0%, #282121 100%);
   width: 20%;
@@ -88,7 +94,7 @@ body .mid .celebrity p {
   width: 100%;
   font-size: 0.75rem;
 }
-body .mid .buttons {
+html body .mid .buttons {
   margin-top: 20.5%;
   margin-right: 10%;
   margin-left: 10%;
@@ -108,15 +114,15 @@ body .mid .buttons {
   font-size: 0.5rem;
   letter-spacing: 2px;
 }
-body .mid .buttons .buttons:hover {
+html body .mid .buttons .buttons:hover {
   cursor: pointer;
   -webkit-box-shadow: 0px 5px 40px -10px gold;
   -moz-box-shadow: 0px 5px 40px -10px gold;
   box-shadow: 5px 40px -10px gold;
   transition: all 0.4s ease 0s;
 }
-body .mid .buttons .Alive,
-body .mid .buttons .Dead {
+html body .mid .buttons .Alive,
+html body .mid .buttons .Dead {
   display: block;
   background-color: #ff0000;
   margin: 0 2% 2%;
@@ -131,7 +137,7 @@ body .mid .buttons .Dead {
   font-family: 'permanent marker';
   letter-spacing: 3px;
 }
-body .mid .scoreBoard {
+html body .mid .scoreBoard {
   margin-right: 18%;
   background: #ff0000;
   background: radial-gradient(circle, #ff0000 0%, #282121 100%);
@@ -141,4 +147,49 @@ body .mid .scoreBoard {
   height: 10%;
   text-align: center;
   font-family: 'Notable';
+}
+html .creditsMeta {
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+html .creditsMeta .credits {
+  background: #ff0000;
+  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
+  width: 20%;
+  border-radius: 10%;
+  border: 1px solid gold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 2px solid green;
+  width: 66%;
+}
+html .creditsMeta .credits h1 {
+  text-align: center;
+  font-family: 'Notable';
+  letter-spacing: 2rem;
+}
+html .creditsMeta .credits .Cast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Notable';
+  border: 2px solid green;
+}
+html .creditsMeta .credits .Cast h1 {
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+html .creditsMeta .credits .Cast .castMember {
+  margin: 0.25%;
+  border: 2px solid green;
+  font-size: 0.75rem;
+  text-align: center;
+}
+html .creditsMeta .credits .Cast .castMember p {
+  font-family: 'Volkhov', serif;
 }
