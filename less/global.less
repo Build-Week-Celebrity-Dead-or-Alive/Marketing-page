@@ -1,13 +1,14 @@
-html{
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+html {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
     body {
-        background-image: url(/img/Curtains.png) ;
+        background-image: url(/img/Curtains.png);
         background-size: 100%;
-    
+        font-size: 1rem;
+
         p,
         h1,
         h2,
@@ -17,10 +18,10 @@ background-size: cover;
         li,
         nav a {
             color: gold;
-    
-    
+
+
         }
-    
+
         .header {
             display: flex;
             justify-content: space-around;
@@ -31,41 +32,41 @@ background-size: cover;
             width: 75%;
             padding-left: 5%;
             text-decoration: none;
-    
+
             .icon {
                 .redRound();
                 font-family: 'permanent marker';
                 text-align: center;
-    
+
                 a {
-    
+
                     text-decoration: none;
                 }
             }
-    
+
             nav {
                 width: 400%;
                 text-decoration: none;
                 height: 10%;
                 font-family: 'Satisfy';
-    
-    
+
+
                 a {
                     .redRound();
                     text-decoration: none;
                     margin: 3%;
                     padding: 2%;
-                    
+
                 }
             }
         }
-    
-    
+
+
         .mid {
             display: flex;
             margin-top: 5%;
             justify-content: space-around;
-    
+
             .celebrity {
                 flex-direction: column;
                 align-items: center;
@@ -74,23 +75,23 @@ background-size: cover;
                 width: 25%;
                 margin-left: 18%;
                 text-align: center;
-    
+
                 .star {
                     width: 75%;
                 }
-    
+
                 h2 {
                     .redRound(10%);
                     width: 100%;
                 }
-    
+
                 p {
                     .redRound(10%);
                     width: 100%;
                     font-size: .75rem;
                 }
             }
-    
+
             .buttons {
                 margin-top: 20.5%;
                 margin-right: 10%;
@@ -107,16 +108,16 @@ background-size: cover;
                 font-family: 'Notable';
                 font-size: .5rem;
                 letter-spacing: 2px;
-    
+
                 .buttons:hover {
                     cursor: pointer;
                     -webkit-box-shadow: 0px 5px 40px -10px gold;
                     -moz-box-shadow: 0px 5px 40px -10px gold;
                     box-shadow: 5px 40px -10px gold;
                     transition: all 0.4s ease 0s;
-    
+
                 }
-    
+
                 .Alive,
                 .Dead {
                     .buttonSettings();
@@ -124,7 +125,7 @@ background-size: cover;
                     letter-spacing: 3px;
                 }
             }
-    
+
             .scoreBoard {
                 margin-right: 18%;
                 .redRound(10%);
@@ -134,50 +135,343 @@ background-size: cover;
             }
         }
     }
+
     /////////////////////////////About///////////////////////////////
-    .creditsMeta{
+    .creditsMeta {
         margin-top: 2%;
         display: flex;
         justify-content: center;
-        .credits{
-            h1{
+
+        .credits {
+            h1 {
                 text-align: center;
                 font-family: 'Notable';
                 letter-spacing: 2rem;
             }
-            .redRound(10%;);
+
+            .redRound(10%; );
             display:flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             flex-direction: row;
-            .testBorder();
             
+
             width: 66%;
-            .Cast{
-                h1{
+
+            .Cast {
+                h1 {
                     text-align: center;
                     letter-spacing: .5rem;
                 }
+
                 display:flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
                 font-family: 'Notable';
-                .testBorder();
                 
-                .castMember{
+
+                .castMember {
                     margin: .25%;
-                    .testBorder();
+                    
                     font-size: .75rem;
                     text-align: center;
-                    p{
+
+                    p {
                         font-family: 'Volkhov', serif;
                     }
                 }
             }
         }
     }
-    
+
 }
 
+@media @tablet {
+    html {
+        body {
+            font-size: 1rem;
+.creditsMeta{
+    .credits{
+        width: 100%;
+    }
+}
+            .header {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 1%;
+                margin-left: 2%;
+                margin-right: 2%;
+                width: 75%;
+                text-decoration: none;
+
+                .icon {
+                    .redRound();
+                    margin-top: 2%;
+                    margin-left: 5%;
+                    font-family: 'permanent marker';
+                    text-align: center;
+                    width: 20%;
+
+                    a {
+
+                        text-decoration: none;
+                    }
+                }
+
+                nav {
+                    width: 200%;
+                    text-decoration: none;
+                    height: 10%;
+                    font-family: 'Satisfy';
+
+
+                    a {
+                        .redRound();
+                        text-decoration: none;
+                        margin: 3%;
+                        padding: 2%;
+
+                    }
+                }
+            }
+
+            background-image: url(/img/tablet_curtains.png);
+            background-repeat: no-repeat;
+            background-size: fill;
+
+            .mid {
+                display: flex;
+                margin-top: 5%;
+                justify-content: space-around;
+
+                .celebrity {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: 'Notable';
+                    width: 25%;
+                    margin-left: 18%;
+                    text-align: center;
+                    margin-top: 12%;
+
+                    .star {
+                        width: 75%;
+                    }
+
+                    h2 {
+                        .redRound(10%);
+                        width: 100%;
+                    }
+
+                    p {
+                        .redRound(10%);
+                        width: 150%;
+                        font-size: .75rem;
+                        margin-left: -25%;
+                    }
+                }
+
+                .buttons {
+                    margin-top: 43%;
+                    margin-right: 10%;
+                    margin-left: 10%;
+                    padding-top: 1.2%;
+                    .redRound(20%);
+                    width: 20%;
+                    text-align: center;
+                    height: 5%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Notable';
+                    font-size: .5rem;
+                    letter-spacing: 2px;
+
+                    .buttons:hover {
+                        cursor: pointer;
+                        -webkit-box-shadow: 0px 5px 40px -10px gold;
+                        -moz-box-shadow: 0px 5px 40px -10px gold;
+                        box-shadow: 5px 40px -10px gold;
+                        transition: all 0.4s ease 0s;
+
+                    }
+
+                    .Alive,
+                    .Dead {
+                        .buttonSettings();
+                        font-family: 'permanent marker';
+                        letter-spacing: 3px;
+                    }
+                }
+
+                .scoreBoard {
+                    margin-top: 25%;
+                    margin-right: 10%;
+                    .redRound(5%);
+                    height: 10%;
+                    text-align: center;
+                    font-family: 'Notable';
+                    font-size: .75rem;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+@media @phone {
+    html {
+        body {
+            font-size: .75rem;
+
+
+
+
+            .header {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-top: 1%;
+                margin-left: -5%;
+                margin-right: 2%;
+                width: 80%;
+                text-decoration: none;
+
+                .icon {
+
+                    margin-top: 2%;
+                    margin-left: 7%;
+                    padding-left: 7%;
+                    padding-right: 7%;
+                    font-family: 'permanent marker';
+                    text-align: center;
+                    width: 20%;
+
+
+
+                    a {
+                        text-decoration: none;
+                    }
+                }
+
+                nav {
+                    margin-left: -20%;
+                    text-decoration: none;
+                    height: 10%;
+                    padding: 10%;
+                    font-family: 'Satisfy';
+
+
+                    a {
+                        margin: 0%;
+                        text-decoration: none;
+                        padding: 8%;
+                    }
+                }
+            }
+
+            background-image: none;
+            background-color: red;
+            background: radial-gradient(circle, rgba(255, 0, 0, 1) 0%, rgba(40, 33, 33, 1) 100%);
+
+            .mid {
+                display: flex;
+                margin-top: 5%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 0%;
+                padding: 0%;
+                
+
+                .celebrity {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    font-family: 'Notable';
+                    
+                    margin-top: -1%;
+                    margin-right: 43%;
+                    width: 50%;
+                    margin-bottom: 0%;
+                    text-align: center;
+
+
+                    .star {
+                        width: 75%;
+                    }
+
+                    h2 {
+                        .redRound(10%);
+                        width: 100%;
+                    }
+
+                    p {
+                        .redRound(10%);
+                        width: 150%;
+                        font-size: .75rem;
+
+                    }
+                }
+
+                .buttons {
+                    margin-top: -2.6%;
+                    margin-right: 10%;
+                    margin-left: 10%;
+                    padding-top: 5%;
+                    padding-right:35%;
+                    padding-left:35%;
+                    padding-bottom: -100%;
+                    background: none;
+                    border: none;
+                    width: 20%;
+                    text-align: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Notable';
+                    font-size: .5rem;
+                    letter-spacing: 2px;
+
+                    .buttons:hover {
+                        cursor: pointer;
+                        -webkit-box-shadow: 0px 5px 40px -10px gold;
+                        -moz-box-shadow: 0px 5px 40px -10px gold;
+                        box-shadow: 5px 40px -10px gold;
+                        transition: all 0.4s ease 0s;
+
+                    }
+
+                    .Alive,
+                    .Dead {
+                        .buttonSettings();
+                        font-family: 'permanent marker';
+                        letter-spacing: 3px;
+                    }
+                }
+
+                .scoreBoard {
+                    .redRound(5%);
+                    width: 25%;
+                    text-align: center;
+                    font-family: 'Notable';
+                    font-size: .75rem;
+                    margin-top: -130%;
+                    margin-left: 75%;
+                    background: none;
+                    border:none;
+                }
+            }
+
+        }
+    }
+
+
+}
