@@ -1,6 +1,10 @@
 .testBorder {
   border: 2px solid green;
 }
+.center {
+  justify-content: center;
+  align-items: center;
+}
 html {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -32,6 +36,41 @@ html body .header {
   width: 75%;
   padding-left: 5%;
   text-decoration: none;
+}
+html body .header .welcome {
+  background: #ff0000;
+  background: radial-gradient(circle, #ff0000 0%, #282121 100%);
+  width: 20%;
+  border-radius: 10%;
+  border: 1px solid gold;
+  width: 50%;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 30%;
+  margin-left: 3%;
+  font-size: 1rem;
+}
+html body .header .welcome h1 {
+  font-family: 'permanent marker';
+  letter-spacing: 3px;
+}
+html body .header .welcome a {
+  text-decoration-color: Gold;
+  font-family: 'permanent marker';
+  letter-spacing: 3px;
+  color: gold;
+}
+html body .header .welcome p {
+  font-family: 'volkhov';
+}
+html body .header .welcome h2 {
+  font-family: 'notable';
+  letter-spacing: 1px;
+}
+html body .header .navMeta {
+  margin-top: -46.7%;
+  margin-left: -65%;
 }
 html body .header .icon {
   background: #ff0000;
@@ -74,6 +113,7 @@ html body .mid .celebrity {
   width: 25%;
   margin-left: 18%;
   text-align: center;
+  letter-spacing: 1px;
 }
 html body .mid .celebrity .star {
   width: 75%;
@@ -248,8 +288,8 @@ html .creditsMeta .credits .Cast .castMember p {
   }
   html body .mid .celebrity {
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     font-family: 'Notable';
     width: 25%;
     margin-left: 18%;
@@ -386,8 +426,8 @@ html .creditsMeta .credits .Cast .castMember p {
   }
   html body .mid .celebrity {
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     font-family: 'Notable';
     margin-top: -1%;
     margin-right: 43%;
